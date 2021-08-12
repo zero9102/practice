@@ -3,7 +3,8 @@
 
 # Log file
 *.log
-
+validate2log/log
+validate2log/target
 # BlueJ files
 *.ctxt
 
