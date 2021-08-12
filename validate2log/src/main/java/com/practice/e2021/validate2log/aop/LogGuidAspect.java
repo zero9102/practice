@@ -1,4 +1,4 @@
-package com.practice.e2021.validate2log.controller;
+package com.practice.e2021.validate2log.aop;
 
 import java.util.UUID;
 import javax.servlet.http.HttpServletRequest;
