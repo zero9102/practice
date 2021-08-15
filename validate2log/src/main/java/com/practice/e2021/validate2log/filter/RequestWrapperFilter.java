@@ -18,7 +18,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
  *
  */
 @Slf4j
-@Component
+//@Component
 public class RequestWrapperFilter extends OncePerRequestFilter {
     private MyRequestWrapper requestWrapper;
     private MyResponseWrapper reponseWrapper;
