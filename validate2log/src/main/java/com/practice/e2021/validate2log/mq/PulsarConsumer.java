@@ -10,16 +10,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class PulsarConsumer {
 
-    @io.github.majusko.pulsar.annotation.PulsarConsumer(topic = PulsarConfig.bootObjTopic,
-            clazz = MessageDTO.class)
-    public void consumer(MessageDTO message) {
-        log.info("接收到对象消息:content: {}",message);
-    }
-
-    @io.github.majusko.pulsar.annotation.PulsarConsumer(topic = PulsarConfig.myStringTopic,
-            clazz = String.class)
-    public void consumerStringMsg(String message) {
-        log.info("接收到字符串消息:content: {}",message);
-    }
+//    @io.github.majusko.pulsar.annotation.PulsarConsumer(topic = PulsarConfig.bootObjTopic,
+//            clazz = MessageDTO.class)
+//    public void consumer(MessageDTO message) {
+//        log.info("接收到对象消息:content: {}",message);
+//    }
+//
+//    @io.github.majusko.pulsar.annotation.PulsarConsumer(topic = PulsarConfig.myStringTopic,
+//            clazz = String.class)
+//    public void consumerStringMsg(String message) {
+//        log.info("接收到字符串消息:content: {}",message);
+//    }
 
 }

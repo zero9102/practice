@@ -14,10 +14,10 @@ public class PulsarConfig {
     public static final String bootObjTopic = "bootTopic";
 
     public static final String myStringTopic = "myTopic";
-    @Bean
-    public ProducerFactory producerFactory() {
-        return new ProducerFactory()
-                .addProducer(bootObjTopic, MessageDTO.class)
-                .addProducer(myStringTopic, String.class);
-    }
+//    @Bean
+//    public ProducerFactory producerFactory() {
+//        return new ProducerFactory()
+//                .addProducer(bootObjTopic, MessageDTO.class)
+//                .addProducer(myStringTopic, String.class);
+//    }
 }
