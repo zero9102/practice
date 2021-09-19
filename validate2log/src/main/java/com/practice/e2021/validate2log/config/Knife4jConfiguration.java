@@ -33,4 +33,16 @@ public class Knife4jConfiguration {
                 .build();
         return docket;
     }
+
+    public static int testRetry(int tryNum) {
+        if (tryNum > 0) {
+            System.out.println("当前:" + tryNum);
+            return testRetry(--tryNum);
+        }
+        return tryNum;
+    }
+
+    public static void main(String[] args) {
+        testRetry(3);
+    }
 }
